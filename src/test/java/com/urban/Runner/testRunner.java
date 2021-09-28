@@ -39,9 +39,6 @@ public static void openbrowser() throws IOException {
 }
 	@Test(priority=0,dataProvider="getdata1")
 	public static void test(String key) throws IOException, InterruptedException {//String username,String password
-		 driver =Reuseablecomponents.initializer();
-		driver.get(PropertyFileReader.loadfile().getProperty("url"));
-	
 	Urban u=new Urban();
 	try {
 		
