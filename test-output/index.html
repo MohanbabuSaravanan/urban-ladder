@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Mohan.S\AppData\Local\Temp\testng-eclipse--1129023668\testng-customsuite.xml</span>
+                    <span>C:\Users\Mohan.S\AppData\Local\Temp\testng-eclipse-1708436693\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.urban.Runner.testRunner" hash-for-method="testsofa(sofa)">testsofa(sofa)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -144,11 +158,6 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.urban.Runner.testRunner" hash-for-method="testsofa(sofa)">testsofa(sofa)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.urban.Runner.testRunner" hash-for-method="teststore">teststore</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -164,6 +173,74 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.urban.Runner.testRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testsofa(sofa)">
+                  </a> <!-- testsofa(sofa) -->
+                  <span class="method-name">testsofa</span>
+                  <span class="parameters">(sofa)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;search&quot; name=&quot;keywords&quot; id=&quot;search&quot; value=&quot;&quot; placeholder=&quot;Search&quot; itemprop=&quot;query-input&quot; class=&quot;typeahead tt-input&quot; autocomplete=&quot;off&quot; spellcheck=&quot;false&quot; dir=&quot;auto&quot; style=&quot;position: relative; vertical-align: top; background-color: transparent;&quot;&gt; is not clickable at point (501, 118). Other element would receive the click: &lt;img class=&quot;prodimg&quot; alt=&quot;Online Furniture&quot; src=&quot;https://www.ulcdn.net/media/subscription_popup/TMY-POPUP.jpg?1630341456&quot;&gt;
+  (Session info: chrome=94.0.4606.61)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-BAVJ3J78&apos;, ip: &apos;192.168.37.136&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\Mohan.S\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53141}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f7fafa20cca8084eab5fbc98edee1707
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.urban.ReuseableComponents.Methods.soafclick(Methods.java:152)
+	at com.urban.pageobject.sofa.storetab(sofa.java:10)
+	at com.urban.Runner.testRunner.testsofa(testRunner.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -233,14 +310,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testsofa(sofa)">
-                  </a> <!-- testsofa(sofa) -->
-                  <span class="method-name">testsofa</span>
-                  <span class="parameters">(sofa)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="teststore">
                   </a> <!-- teststore -->
                   <span class="method-name">teststore</span>
@@ -251,7 +320,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Mohan.S\AppData\Local\Temp\testng-eclipse--1129023668\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Mohan.S\AppData\Local\Temp\testng-eclipse-1708436693\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -260,7 +329,34 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.urban.pageobject.sort&quot;/&gt;
+      &lt;class name=&quot;com.urban.pageobject.Urban&quot;/&gt;
+      &lt;class name=&quot;com.urban.Utilities.Listeners&quot;/&gt;
+      &lt;class name=&quot;com.urban.Utilities.ExtentReporterNG&quot;/&gt;
+      &lt;class name=&quot;com.urban.pageobject.Compare&quot;/&gt;
+      &lt;class name=&quot;com.urban.ReuseableComponents.Reuseablecomponents&quot;/&gt;
+      &lt;class name=&quot;com.urban.pageobject.search&quot;/&gt;
+      &lt;class name=&quot;com.urban.UIstore.aboutusUI&quot;/&gt;
+      &lt;class name=&quot;com.urban.Utilities.PropertyFileReader&quot;/&gt;
+      &lt;class name=&quot;com.urban.UIstore.UrbanUI&quot;/&gt;
+      &lt;class name=&quot;com.urban.UIstore.priceUI&quot;/&gt;
+      &lt;class name=&quot;com.urban.pageobject.sofa&quot;/&gt;
+      &lt;class name=&quot;hybrid.UrbanLadder.App&quot;/&gt;
+      &lt;class name=&quot;com.urban.pageobject.emi&quot;/&gt;
+      &lt;class name=&quot;com.urban.UIstore.linksUI&quot;/&gt;
       &lt;class name=&quot;com.urban.Runner.testRunner&quot;/&gt;
+      &lt;class name=&quot;com.urban.Utilities.DataDriven&quot;/&gt;
+      &lt;class name=&quot;com.urban.pageobject.links&quot;/&gt;
+      &lt;class name=&quot;com.urban.UIstore.compareUI&quot;/&gt;
+      &lt;class name=&quot;com.urban.UIstore.storeUI&quot;/&gt;
+      &lt;class name=&quot;com.urban.UIstore.sortUI&quot;/&gt;
+      &lt;class name=&quot;com.urban.UIstore.emiUI&quot;/&gt;
+      &lt;class name=&quot;com.urban.pageobject.price&quot;/&gt;
+      &lt;class name=&quot;com.urban.pageobject.aboutus&quot;/&gt;
+      &lt;class name=&quot;com.urban.pageobject.store&quot;/&gt;
+      &lt;class name=&quot;com.urban.UIstore.sofaUI&quot;/&gt;
+      &lt;class name=&quot;com.urban.UIstore.SearchUI&quot;/&gt;
+      &lt;class name=&quot;com.urban.ReuseableComponents.Methods&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -274,7 +370,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Default test (28 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -302,45 +398,45 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test')
+data.setCell(0, 1, 'testemi')
 data.setCell(0, 2, 'com.urban.Runner.testRunner')
-data.setCell(0, 3, 11374);
+data.setCell(0, 3, 31407);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testsearch')
+data.setCell(1, 1, 'testcampare')
 data.setCell(1, 2, 'com.urban.Runner.testRunner')
-data.setCell(1, 3, 9364);
+data.setCell(1, 3, 14797);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testsofa')
+data.setCell(2, 1, 'test')
 data.setCell(2, 2, 'com.urban.Runner.testRunner')
-data.setCell(2, 3, 7357);
+data.setCell(2, 3, 11290);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testprice')
+data.setCell(3, 1, 'testsearch')
 data.setCell(3, 2, 'com.urban.Runner.testRunner')
-data.setCell(3, 3, 6973);
+data.setCell(3, 3, 9994);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'sortresult')
 data.setCell(4, 2, 'com.urban.Runner.testRunner')
-data.setCell(4, 3, 6284);
+data.setCell(4, 3, 6162);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testcampare')
+data.setCell(5, 1, 'testprice')
 data.setCell(5, 2, 'com.urban.Runner.testRunner')
-data.setCell(5, 3, 5924);
+data.setCell(5, 3, 5809);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'teststore')
+data.setCell(6, 1, 'testlinks')
 data.setCell(6, 2, 'com.urban.Runner.testRunner')
-data.setCell(6, 3, 4862);
+data.setCell(6, 3, 3491);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testemi')
+data.setCell(7, 1, 'teststore')
 data.setCell(7, 2, 'com.urban.Runner.testRunner')
-data.setCell(7, 3, 4581);
+data.setCell(7, 3, 3190);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testlinks')
+data.setCell(8, 1, 'testDeals')
 data.setCell(8, 2, 'com.urban.Runner.testRunner')
-data.setCell(8, 3, 4401);
+data.setCell(8, 3, 1352);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testDeals')
+data.setCell(9, 1, 'testsofa')
 data.setCell(9, 2, 'com.urban.Runner.testRunner')
-data.setCell(9, 3, 1941);
+data.setCell(9, 3, 1097);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -378,119 +474,121 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test(hello)</span>
-                <span class="method-start">15556 ms</span>
+                <span class="method-start">13820 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">26937 ms</span>
+                <span class="method-start">25113 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openbrowser</span>
-                <span class="method-start">27750 ms</span>
+                <span class="method-start">25850 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testsearch(chair)</span>
-                <span class="method-start">40787 ms</span>
+                <span class="method-start">38629 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">50156 ms</span>
+                <span class="method-start">48625 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openbrowser</span>
-                <span class="method-start">51001 ms</span>
+                <span class="method-start">49351 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testcampare(chair)</span>
-                <span class="method-start">63979 ms</span>
+                <span class="method-start">62157 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">69906 ms</span>
+                <span class="method-start">76956 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openbrowser</span>
-                <span class="method-start">70763 ms</span>
+                <span class="method-start">77677 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">teststore</span>
-                <span class="method-start">84107 ms</span>
+                <span class="method-start">90340 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">88971 ms</span>
+                <span class="method-start">93531 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openbrowser</span>
-                <span class="method-start">89790 ms</span>
+                <span class="method-start">94257 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testprice(bench)</span>
-                <span class="method-start">102850 ms</span>
+                <span class="method-start">106603 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">109825 ms</span>
+                <span class="method-start">112413 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openbrowser</span>
-                <span class="method-start">110642 ms</span>
+                <span class="method-start">113155 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testsofa(sofa)</span>
-                <span class="method-start">123978 ms</span>
+                <span class="method-start">125609 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">131337 ms</span>
+                <span class="method-start">126710 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openbrowser</span>
-                <span class="method-start">132157 ms</span>
+                <span class="method-start">127411 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">sortresult(Wall mirrors)</span>
-                <span class="method-start">146015 ms</span>
+                <span class="method-start">140280 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">152300 ms</span>
+                <span class="method-start">146444 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openbrowser</span>
-                <span class="method-start">153100 ms</span>
+                <span class="method-start">147159 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testlinks</span>
-                <span class="method-start">166338 ms</span>
+                <span class="method-start">159552 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">170741 ms</span>
+                <span class="method-start">163044 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openbrowser</span>
-                <span class="method-start">171552 ms</span>
+                <span class="method-start">163797 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testemi</span>
-                <span class="method-start">185002 ms</span>
+                <span class="method-start">176195 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">189585 ms</span>
+                <span class="method-start">207603 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">openbrowser</span>
-                <span class="method-start">190418 ms</span>
+                <span class="method-start">208308 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDeals</span>
-                <span class="method-start">205118 ms</span>
+                <span class="method-start">220911 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">207060 ms</span>
+                <span class="method-start">222264 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

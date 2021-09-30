@@ -1,0 +1,5 @@
+22:08:48.701 [main] INFO  com.urban.ReuseableComponents.Reuseablecomponents -  locations has printed sucessfully
+22:09:07.594 [main] INFO  com.urban.ReuseableComponents.Reuseablecomponents - Product price printed sucessfully
+22:09:41.624 [main] INFO  com.urban.ReuseableComponents.Reuseablecomponents - InStock Products printed sucessfully
+22:09:58.225 [main] INFO  com.urban.ReuseableComponents.Reuseablecomponents - Number of links and products counted sucessfully
+22:10:42.784 [main] INFO  com.urban.ReuseableComponents.Reuseablecomponents - EMI details printed sucessfully

@@ -49,7 +49,7 @@ public static void openbrowser() throws IOException {
 	log.info("please Enter valid Details");
 	}
 		catch(Exception e) {
-			System.out.println("Screenshot has Taken");
+			System.out.println("Screenshot has not Taken");
 		
 		}
 	}

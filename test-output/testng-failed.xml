@@ -5,10 +5,7 @@
     <classes>
       <class name="com.urban.Runner.testRunner">
         <methods>
-          <include name="testcampare" invocation-numbers="0"/>
           <include name="openbrowser"/>
-          <include name="testprice" invocation-numbers="0"/>
-          <include name="sortresult" invocation-numbers="0"/>
           <include name="closebrowser"/>
           <include name="testsofa" invocation-numbers="0"/>
         </methods>
